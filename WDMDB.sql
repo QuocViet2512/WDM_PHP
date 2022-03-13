@@ -34,6 +34,7 @@ go
 create table Nhan_Vien(
 	MaNV char(5) primary key,
 	TenNV nvarchar(50),
+	MatKhauNV varchar(50),
 	ChucVu int references Chuc_Vu(MaCV) 	
 )
 go 
@@ -64,3 +65,5 @@ create table Khach_Hang(
 	MaHD int references Hoa_Don(MaHD)  
  )
  go
+
+
