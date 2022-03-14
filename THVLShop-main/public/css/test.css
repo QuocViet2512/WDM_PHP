@@ -1,0 +1,15 @@
+.shopping {
+    margin-top: 30px;
+  }
+  .shopleft, .shopleft {
+    float: left;
+    text-align: center;
+    width: 610px;
+  }
+  .shopleft img{outline:none}
+  .shopleft a,.shopright a{outline:none}
+  
+  .shopright img {
+    width: 270px;
+    outline:none
+  }
