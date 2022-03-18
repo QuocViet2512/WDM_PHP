@@ -270,7 +270,7 @@
             <div class="blog-box">
                 <!-- image -->
                 <div class="blog-img">
-                    <img src="./public/img/news1.jpg" alt="Blog">
+                    <img src="./public/img/news1.jpeg" alt="Blog">
                 </div>
 
                 <!-- text -->

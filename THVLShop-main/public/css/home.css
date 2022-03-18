@@ -306,7 +306,6 @@
 
 /*slider*/
 .slideshow-container {
-    max-width: 1350px;
     position: relative;
     margin: auto;
     z-index: 0;
