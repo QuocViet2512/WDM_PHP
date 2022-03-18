@@ -304,6 +304,57 @@
     transition: all ease 0.3s;
 }
 
+/*slider*/
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    z-index: 0;
+  }
+  
+  .mySlides {
+      display: none;
+  }
+  
+  .text {
+      color: #fff;
+      font-size: 24px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+  }
+   
+  
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+   
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+    
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
 /* responsive */
 @media(max-width:1250px){
     .blog-box{

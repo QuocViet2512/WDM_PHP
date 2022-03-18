@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THVL Shop</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/8648b5710f.css">
-    <link rel="stylesheet" href="./public/css/home.css">
-    <link rel="stylesheet" href="./public/css/LoginStyle.css">
-    <script
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-      type="text/javascript"
-    ></script>
-    <script src="./public/js/LoginJS.js"></script>
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
-</head>
-<body>
-    <nav class="navbar">
-        
-    </nav>
-    
+<?php 
+    include 'inc/header.php'
+?>
     <!-- hero section -->
     <header class="hero-section">
         <div class="content">
@@ -32,18 +10,34 @@
         </div>        
     </header>
 
-    <!-- collections 
+    <!-- collection -->
     <section class="collection-container">
         <h2 class="product-category">Mặt hàng ưu đãi</h2>
-        <div class="slider-area">
-            <div class="slider-img">
-                <div><img src="./public/img/product_1.png" alt=""></div>
-                <div><img src="./public/img/product_2.png" alt=""></div>
-                <div><img src="./public/img/product_3.png" alt=""></div>
+
+    </div>
+    </section>
+    <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="public/img/news1.jpeg" style="width:100%">
+
             </div>
-        </div>
-    </section>-->
-    
+
+            <div class="mySlides fade">
+                <img src="public/img/news2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="public/img/news3.jpg" style="width:100%">
+            </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+ 
 
     <!-- cards-container -->
     <section class="product">
@@ -276,7 +270,7 @@
             <div class="blog-box">
                 <!-- image -->
                 <div class="blog-img">
-                    <img src="./public/img/news1.jpg" alt="Blog">
+                    <img src="./public/img/news1.jpeg" alt="Blog">
                 </div>
 
                 <!-- text -->
@@ -314,132 +308,15 @@
             </div>
         </div>
 
-<!--Login-->
-<div class="modal" id="LoginModal">
-    <div class="form">
-      <div class="subform">
-        <div id="LoginForm" style="transition: all 1s">
-          <h1 class="tit">Login</h1>
-          <div class="bd">
-            <input
-              type="text"
-              class="ip"
-              id="LUser"
-              oninput="jsc()"
-              placeholder="User Name"
-            />
-            <button class="bt" onclick="rm(1)">
-              <img
-                id="LIUser"
-                src="./public/img/add.png"
-                class="ripbt"
-                alt=""
-              />
-            </button>
-          </div>
-          <div class="bd">
-            <input
-              type="password"
-              class="ip"
-              id="LPass"
-              oninput="jsc()"
-              placeholder="PassWord"
-            />
-            <button class="bt" onclick="rm(2)">
-              <img
-                id="LIPass"
-                src="./public/img/add.png"
-                class="ripbt"
-                alt=""
-              />
-            </button>
-          </div>
-        </div>
 
-        <!--SignUp-->
-        <div style="display: none; transition: all 1s" id="SignupForm">
-          <h1 class="tit">Sign Up</h1>
-          <div class="bd">
-            <input
-              type="text"
-              class="ip"
-              id="SUser"
-              oninput="jsc()"
-              placeholder="User Name"
-            />
-            <button class="bt" onclick="rm(3)">
-              <img
-                id="SIUser"
-                src="./public/img/add.png"
-                class="ripbt"
-                alt=""
-              />
-            </button>
-          </div>
-          <div class="bd">
-            <input
-              type="password"
-              class="ip"
-              id="SPass"
-              oninput="jsc()"
-              placeholder="PassWord"
-            />
-            <button class="bt" onclick="rm(4)">
-              <img
-                id="SIPass"
-                src="./public/img/add.png"
-                class="ripbt"
-                alt=""
-              />
-            </button>
-          </div>
-          <div class="bd">
-            <input
-              type="password"
-              class="ip"
-              id="SPass2"
-              oninput="jsc()"
-              placeholder="Confirm PassWord"
-            />
-            <button class="bt" onclick="rm(5)">
-              <img
-                id="SIPass2"
-                src="./public/img/add.png"
-                class="ripbt"
-                alt=""
-              />
-            </button>
-          </div>
-        </div>
-        <!---->
-
-        <div class="bbtn">
-          <button onclick="SignUp(1)" class="botbut">Sign In</button>
-          <button
-            onclick="SignUp(0)"
-            class="botbut"
-            style="background-color: rgba(64, 227, 93, 0.77)"
-          >
-            Sign Up
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
     </section>
 
-    <footer class="footer">
-       
-        
-    </footer>
 
-<script src="./public/js/nav.js"></script>
 <script src="./public/js/home.js"></script>
-<script src="./public/js/footer.js"></script>
-
+<script src="./public/js/slider.js"></script>
 <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" ></script>
 <script type="text/javascript">
@@ -450,5 +327,4 @@ $('.slider-img').slick({
   autoplaySpeed: 4000,
 });
 </script>-->
-</body>
-</html>
+<?php  include 'inc/footer.php'?>
