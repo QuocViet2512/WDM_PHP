@@ -30,8 +30,8 @@
                 <div class="col-lg-6">
                     <nav class="header_menu">
                         <ul>
-                            <li class="active"><a href="index.html">Trang chủ</a></li>
-                            <li><a href="index.html">Sản phẩm</a></li>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="product.html">Sản phẩm</a></li>
                             <li><a href="index.html">Về chúng tôi</a></li>
                             <li><a href="index.html">Tin tức</a></li>
                             <li><a href="index.html">Liên hệ</a></li>
@@ -52,8 +52,105 @@
     </header>
 
     <!-- cart -->
+    <section class="cart spad">
+        <div class="container my-5">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Xóa sản phẩm</td>
+                        <td>Hình ảnh</td>
+                        <td>Tên sản phẩm</td>
+                        <td>Giá</td>
+                        <td>Số lượng</td>
+                        <td>Tổng giá</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><a href="#"><i class="fa fa-trash"></i></a></td>
+                        <td><img src="img/card1.jpg" alt=""></td>
+                        <td>
+                            <h5>Tivi</h5>
+                        </td>
+                        <td>
+                            <h5>5.990.000đ</h5>
+                        </td>
+                        <td><input class="w-25 pl-1" value="1" type="number"></td>
+                        <td>
+                            <h5>10.990.000đ</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fa fa-trash"></i></a></td>
+                        <td><img src="img/card2.jpg" alt=""></td>
+                        <td>
+                            <h5>Tivi</h5>
+                        </td>
+                        <td>
+                            <h5>5.990.000đ</h5>
+                        </td>
+                        <td><input class="w-25 pl-1" value="1" type="number"></td>
+                        <td>
+                            <h5>10.990.000đ</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fa fa-trash"></i></a></td>
+                        <td><img src="img/card3.jpg" alt=""></td>
+                        <td>
+                            <h5>Tivi</h5>
+                        </td>
+                        <td>
+                            <h5>5.990.000đ</h5>
+                        </td>
+                        <td><input class="w-25 pl-1" value="1" type="number"></td>
+                        <td>
+                            <h5>10.990.000đ</h5>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
     
-    
+    <!-- coupon -->
+    <section class="coupon spad">
+        <div class="container my-5">
+            <div class="row">
+                <div class="coupon-cart col-lg-6 col-md-6 col-12 mb-4">
+                    <div>
+                        <h5>Phiếu khuyến mãi</h5>
+                        <p>Nhập mã khuyến mãi vào đây</p>
+                        <input type="text" placeholder="Mã khuyến mãi">
+                        <button class="coupon-btn">Áp dụng khuyến mãi</button>
+                    </div>
+                </div>
+                <div class="total-cart col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h5>Tổng giỏ hàng</h5>
+                        <div class="d-flex justify-content-between">
+                            <h6>Thuế</h6>
+                            <p>20.000đ</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Phí giao hàng</h6>
+                            <p>20.000đ</p>
+                        </div>
+                        <hr class="second-hr">
+                        <div class="d-flex justify-content-between">
+                            <h6>Tổng cộng</h6>
+                            <p>20.000đ</p>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <button class="total-btn">Tiến hành kiểm tra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- footer -->
     <section class="footer spad">
         <div class="container">
