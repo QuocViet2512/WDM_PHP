@@ -192,6 +192,24 @@ ul{
     content: '';
 }
 
+.sp{
+    padding-right: 20px;
+}
+
+.checksp{
+    padding-right: 20px;
+}
+
+.list-group-item ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 .spad{
     padding-top: 80px;
     padding-bottom: 80px;
