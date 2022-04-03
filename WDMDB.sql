@@ -1,3 +1,4 @@
+/*Helllloooo*/
 create database WDMDB
 go
 use WDMDB
