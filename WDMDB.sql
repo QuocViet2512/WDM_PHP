@@ -6,7 +6,7 @@ go
 create table Hang_SX(
 	MaHangSX int identity primary key,
 	TenHangSX nvarchar(30),
-	DCHangSX nvarchar(50)
+	DCHangSX nvarchar(100)
 ) 
 go
 create table Loai_MH(
@@ -19,7 +19,7 @@ create table Mat_Hang(
 	TenMH nvarchar(100),
 	GiaBan float,
 	GiaNhap float,
-	MoTa nvarchar(205),
+	MoTa nvarchar(255),
 	SoLuongTon int,
 	BaoHanh int,
 	TrangThai nvarchar(15),
@@ -35,7 +35,7 @@ go
 create table Nhan_Vien(
 	MaNV char(5) primary key,
 	TenNV nvarchar(50),
-	MatKhauNV nvarchar(50),
+	MatKhauNV varchar(50),
 	ChucVu int references Chuc_Vu(MaCV) 	
 )
 go 
@@ -45,13 +45,13 @@ create table Khach_Hang(
 	TenKH nvarchar(50),
 	DiaChiKH nvarchar(100),
 	SDTKH varchar(11),
-	MatKhauKH nvarchar(50)
+	MatKhauKH varchar(50)
  )
  go
  create table Hoa_Don(
 	MaHD int identity primary key,
 	NgayMua datetime,
-	TongTien int,
+	TongTien float,
 	TrangThaiTT bit,
 	EmailKH nvarchar(50)references Khach_Hang(EmailKH),
 	MaNV char(5) references Nhan_Vien(MaNV),
@@ -62,7 +62,7 @@ create table Khach_Hang(
 	MaCTHD int identity primary key,
 	MaMH int references Mat_Hang(MaMH),
 	SL int,
-	DonGia int,
+	DonGia float,
 	MaHD int references Hoa_Don(MaHD)  
  )
  go
