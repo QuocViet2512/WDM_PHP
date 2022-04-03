@@ -1,24 +1,24 @@
 /*Helllloooo*/
-create database WEBSIEUNHAN
+create database WDMDB
 go
 use WDMDB
 go
 create table Hang_SX(
 	MaHangSX int identity primary key,
-	TenHangSX nvarchar(100),
-	DCHangSX nvarchar(200)
+	TenHangSX nvarchar(30),
+	DCHangSX nvarchar(100)
 ) 
 go
 create table Loai_MH(
 	MaLMH int identity primary key,
-	TenLMH nvarchar(20)
+	TenLMH nvarchar(50)
 )
 go
 create table Mat_Hang(
 	MaMH int identity primary key,
 	TenMH nvarchar(100),
-	GiaBan int,
-	GiaNhap int,
+	GiaBan float,
+	GiaNhap float,
 	MoTa nvarchar(255),
 	SoLuongTon int,
 	BaoHanh int,
@@ -51,7 +51,7 @@ create table Khach_Hang(
  create table Hoa_Don(
 	MaHD int identity primary key,
 	NgayMua datetime,
-	TongTien int,
+	TongTien float,
 	TrangThaiTT bit,
 	EmailKH nvarchar(50)references Khach_Hang(EmailKH),
 	MaNV char(5) references Nhan_Vien(MaNV),
@@ -61,8 +61,8 @@ create table Khach_Hang(
  create table CT_HD(
 	MaCTHD int identity primary key,
 	MaMH int references Mat_Hang(MaMH),
-	SLMua int,
-	DonGia int,
+	SL int,
+	DonGia float,
 	MaHD int references Hoa_Don(MaHD)  
  )
  go
